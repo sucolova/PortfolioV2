@@ -1,3 +1,7 @@
+html {
+    font-family: prestige-elite-std, monospace;
+}
+
 #containerHeading {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -26,10 +30,14 @@ h1 {
                             "contact";
 }
 
-#photography {
+/* Container Styling */
+
+#photography, .full-img {
     grid-area: foto;
+    display: flex;
+    flex-direction: column;
     color: white;
-    justify-self: center;
+    align-items: center;
 }
 
 #designs {
@@ -37,6 +45,21 @@ h1 {
     grid-area: design;
     color: white;
 }
+
+/* Gallery Styling*/
+
+#photography .full-img .displayed-img {
+    height: 99vh;
+}
+
+.overlay {
+    background-color: brown;
+    width: 100%;
+    height: 100%;
+}
+
+
+
 
 
 
