@@ -1,0 +1,19 @@
+#containerHeading {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 10em;
+    grid-template-areas: "logo nav lang";
+    background-image: url(img/Heading/banner.png);
+    background-repeat: repeat-x;
+    background-color: black; /* Fallback */
+}
+
+h1 {
+    background-image: url(img/Heading/logo.png);
+    background-repeat: no-repeat;
+    grid-area: logo;
+    color: white;
+}
+
+
+
