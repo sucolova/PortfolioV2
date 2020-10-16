@@ -15,5 +15,28 @@ h1 {
     color: white;
 }
 
+#containerContent {
+    background-color: rgb(37, 37, 37);
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "foto"
+                            "design"
+                            "about"
+                            "contact";
+}
+
+#photography {
+    grid-area: foto;
+    color: white;
+    justify-self: center;
+}
+
+#designs {
+    justify-self: center;
+    grid-area: design;
+    color: white;
+}
+
 
 
