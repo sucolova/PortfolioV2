@@ -19,6 +19,14 @@ h1 {
     color: white;
 }
 
+h1:hover {
+
+    /* good for now, but i'm going to need a image with transparency i think; 
+    or, i make only one logo that determines the size of the whole bar, so, if i hover, it won't look so stupid*/
+    filter: brightness(.6);
+
+}
+
 #containerContent {
     background-color: rgb(37, 37, 37);
     display: grid;
@@ -57,10 +65,16 @@ h1 {
     max-height: 90vh;
 }
 
-.displayed-img {
+.displayed-img:hover {
     filter: brightness(.6);
 }
 
+/*
+I think it would be nicer without any buttons
+.full-img button {
+    display: inline-flex;
+    justify-content: center;
+}*/
 
 
 
