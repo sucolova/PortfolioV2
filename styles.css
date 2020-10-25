@@ -60,14 +60,26 @@ h1:hover {
 
 /* Gallery Styling*/
 
-#photography .full-img .displayed-img {
-    max-width: 90vw;
-    max-height: 90vh;
+#photography .cropped-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 5em;
+
 }
 
+#photography .displayedImage {
+    max-width: 90vw;
+    min-width: 25%;
+    max-height: 90vh;
+    
+}
+
+/*
 .displayed-img:hover {
     filter: brightness(.6);
 }
+*/
 
 /*
 I think it would be nicer without any buttons
