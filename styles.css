@@ -28,7 +28,6 @@ h1:hover {
 }
 
 #containerContent {
-    background-color: rgb(37, 37, 37);
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
@@ -47,14 +46,17 @@ h1:hover {
 #photography {
     grid-area: foto;
     justify-items: center;
-    color: white;
+    color: rgb(0, 0, 0);
+}
 
+#photography h2 {
+    margin-top: 3em;
 }
 
 #designs {
     grid-area: design;
     justify-items: center;
-    color: white;
+    color: rgb(0, 0, 0);
 
 }
 
@@ -63,16 +65,13 @@ h1:hover {
 #photography .cropped-img {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    row-gap: 5em;
-
+    flex:auto;
+    justify-content: center;
 }
 
 #photography .displayedImage {
-    max-width: 90vw;
-    min-width: 25%;
-    max-height: 90vh;
-    
+    max-height: 30vh;
+    margin: 3em;
 }
 
 /*
