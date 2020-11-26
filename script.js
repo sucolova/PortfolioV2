@@ -24,7 +24,7 @@ let croppedImages = ["berg", "stadt", "abstrakt", "natur"];
 
 for (let i = 0; i < croppedImages.length; i++){
     const newImage = document.createElement("img");
-    newImage.setAttribute("src", "img/Gallery/" + croppedImages[i] + ".jpg");
+    newImage.setAttribute("src", "img/Gallery/" + croppedImages[i] + ".svg");
     newImage.setAttribute("class", "displayedImage");
     newImage.setAttribute("id",croppedImages[i]) 
     gallery.appendChild(newImage);
@@ -36,7 +36,7 @@ displayedImage.addEventListener("mouseenter", function (event) {
 });
 
 displayedImage.addEventListener("mouseleave", function (event) {
-    event.target.setAttribute("src", "img/Gallery/" + croppedImages[i] + ".jpg")
+    event.target.setAttribute("src", "img/Gallery/" + croppedImages[i] + ".svg")
 });
 }
 
